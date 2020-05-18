@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>z-index</title>
+<style>
+html {
+    background: #eee;
+    padding: 10px;
+}
+.block {
+    position: relative;
+    width: 110px;
+    height: 100px;
+    background: tomato;
+    pointer-events: none;
+}
+.block__bg {
+    position: absolute;
+    z-index: 10;
+    top: 15px;
+    left: 15px;
+    width: 100px;
+    height: 100px;
+    background: green;
+}
+</style>
+</head>
+<body>
+
+<div class="block">
+	<input type="text">
+    <div class="block__bg">
+    	<input type="text">
+    </div>
+    <input type="text">
+</div>
+
+</body>
+</html>
